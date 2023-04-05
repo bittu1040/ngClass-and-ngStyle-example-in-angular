@@ -1,0 +1,53 @@
+
+  <button [ngClass]="{ btn: isButton,'btn-primary': isPrimary }">
+    A Simple Button
+  </button>
+
+
+<div>
+  <input type="checkbox" (click)="toggleButton()" /> Toggle Button Class
+</div>
+
+
+
+<div>
+  <button [ngStyle]="{
+    color:canSubmit ? 'white':'black', 
+    backgroundColor:canSubmit ? '#9b59b6':'white' }">
+    Submit
+  </button>
+</div>
+
+<br><br>
+<hr>
+
+<h3>ngStyle different example in Angular</h3>
+
+<p [ngStyle]="{color:'red'}">ngStyle</p>
+<p [ngStyle]="{color:true?'red':'blue'}">ngStyle</p>
+<p [ngStyle]="{color:false?'red':'blue'}">ngStyle</p>
+
+<hr>
+
+<p [ngStyle]="{color:flag?'red':'blue'}">ngStyle</p>
+<div>
+  <input type="checkbox" (click)="toggleButtonForngStyle()" /> Toggle Button
+</div>
+
+
+<hr>
+
+<h3> ngClass different example in Angular</h3>
+<p [ngClass]="{redColor: true}">ngClass</p>
+<p [ngClass]="{blueColor: true}">ngClass</p>
+<p [ngClass]="{redColor: 1==1}">ngClass</p>
+<p [ngClass]="{redColor: flag}">ngClass</p>
+
+<p [ngClass]="step1 ? 'redColor' : 'blueColor'">ngClass</p>
+
+
+<div>
+  <input type="checkbox" (click)="toggleButtonForngClass()" /> Toggle Button
+</div>
+
+<br><br>
