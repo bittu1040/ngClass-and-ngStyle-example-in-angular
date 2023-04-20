@@ -16,7 +16,7 @@ export class AppComponent  {
    this.isPrimary = !this.isPrimary;
  }
 
- step1=true
+ step1=false
  flag= true;
  toggleButtonForngStyle(){
    this.flag= !this.flag
